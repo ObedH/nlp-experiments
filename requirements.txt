@@ -1,2 +1,2 @@
-bnlp==0.8
+bnlp-toolkit
 nltk==3.10.3

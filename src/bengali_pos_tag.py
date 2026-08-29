@@ -44,5 +44,5 @@ for sentence in sentences[:max_sentences]:
 
 for example in incorrect:
     bengali_word, dataset_tag, pos_tag = example
-    print(f"Mismatch: Bengali word: {bengali_word}, Dataset: {dataset_tag}, Tagger: {pos_tag}")
+    print(f"Incorrect tag. Bengali word: {bengali_word}, Predicted: {pos_tag}, Actual: {dataset_tag}")
 print(f"Accuracy: {(correct * 100 / total):.2f}")
