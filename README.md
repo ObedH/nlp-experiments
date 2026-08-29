@@ -25,10 +25,13 @@ Finally, you can see the accuracy of the model.
 
 ## Troubleshooting
 If you see this after trying to install Python 3.11:
-```Couldn't locate package python3.11
-Couldn't locate package python3.11-venv```
+```
+Couldn't locate package python3.11
+Couldn't locate package python3.11-venv
+```
 Fix:
-```sudo apt update
+```
+sudo apt update
 sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
