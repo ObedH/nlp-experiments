@@ -11,7 +11,7 @@ Next, you must install the necessary python packages. You can update pip using `
 
 ## Getting the Training Data
 Note: Training data is only required for the Bengali POS Tagging experiment.
-You can download the training data automatically using the following command: ```./scripts/download_bengali_pos_tag_data.py```.
+You can download the training data automatically using the following command: ```./scripts/download_bengali_pos_tag_data.sh```.
 
 
 ## Running Experiments
@@ -22,3 +22,16 @@ This will generate all the possible strings of balanced parentheses with a maxim
 Use the command ```python src/bengali_pos_tag.py```.
 You will see many lines starting with "Incorrect tag. Bengali word: ___, Predicted: ___, Actual: ___". This is expected behavior. The "Bengali word" field is the word found in the dataset. The "Predicted" field is what the BengaliPOS model thought the part of speech was. The "Actual" field is what the dataset listed as the part of speech for that word.
 Finally, you can see the accuracy of the model.
+
+## Troubleshooting
+If you see this after trying to install Python 3.11:
+```Couldn't locate package python3.11
+Couldn't locate package python3.11-venv```
+Fix:
+```sudo apt update
+sudo apt install -y software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install -y python3.11 python3.11-venv
+```
+
