@@ -26,8 +26,8 @@ Finally, you can see the accuracy of the model.
 ## Troubleshooting
 If you see this after trying to install Python 3.11:
 ```
-Couldn't locate package python3.11
-Couldn't locate package python3.11-venv
+Error: Couldn't locate package python3.11
+Error: Couldn't locate package python3.11-venv
 ```
 Fix:
 ```
