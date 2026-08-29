@@ -29,7 +29,7 @@ If you see this after trying to install Python 3.11:
 Error: Couldn't locate package python3.11
 Error: Couldn't locate package python3.11-venv
 ```
-Fix:
+Fix (Ubuntu):
 ```
 sudo apt update
 sudo apt install -y software-properties-common
